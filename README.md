@@ -271,5 +271,3 @@ Escaneie o QR Code abaixo pelo aplicativo do seu banco:
 ## 👨‍💻 Desenvolvedor
 
 Desenvolvido por [Thalisson de Souza](https://www.linkedin.com/in/thalisson-de-souza/).
-
-O nome do desenvolvedor também aparece no rodapé do aplicativo e abre diretamente o LinkedIn quando clicado.
