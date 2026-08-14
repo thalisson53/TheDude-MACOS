@@ -244,5 +244,3 @@ Scan the QR Code below using a Brazilian banking application:
 ## 👨‍💻 Developer
 
 Developed by [Thalisson de Souza](https://www.linkedin.com/in/thalisson-de-souza/).
-
-The developer's name also appears in the application footer and opens LinkedIn when clicked.
