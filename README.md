@@ -17,6 +17,7 @@ O **TheDude MACOS** instala e gerencia o MikroTik The Dude em Macs com processad
 | 🧩 Perfis independentes | Crie Matriz, Filial, Cliente A e quantos ambientes precisar. |
 | 🪟 WinBox incluído | Envia o `winbox.exe` diretamente para o disco C: de cada perfil. |
 | 🚀 Atalhos no Dock | Abra cada Dude pelo nome escolhido, sem janela de Terminal. |
+| ✨ Retina por perfil | Ative ou desative a renderização Retina separadamente em cada ambiente. |
 | 💾 Backup e restauração | Proteja conexões, preferências e todo o disco C: do perfil. |
 | 🛠️ Manutenção integrada | Repare atalhos, atualize o Wine, abra logs e encerre processos travados. |
 | 🍎 Feito para Apple Silicon | Preparado para Macs M1, M2, M3, M4 ou posteriores. |
@@ -152,6 +153,7 @@ Se desejar abrir apenas o endereço, use:
 - **Abrir**: inicia o The Dude sem abrir o Terminal.
 - **Abrir disco C:**: mostra no Finder o disco virtual daquele perfil.
 - **Instalar WinBox**: envia automaticamente o WinBox incluído para `C:\winbox.exe`, diretamente na raiz do disco C:.
+- **Ativar Retina / Desativar Retina**: alterna a renderização em alta resolução somente naquele perfil. Feche o Dude antes de usar e abra-o novamente depois da alteração.
 - **Reparar atalho**: recria o aplicativo do Dock sem apagar o ambiente.
 - **Renomear**: altera o nome apresentado no painel e no Dock.
 - **Backup**: cria um ZIP contendo todo o ambiente do perfil.

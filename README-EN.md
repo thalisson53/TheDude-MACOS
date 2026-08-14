@@ -17,6 +17,7 @@
 | 🧩 Independent profiles | Create Headquarters, Branch, Customer A and as many environments as you need. |
 | 🪟 WinBox included | Copies `winbox.exe` directly to the C: drive of each profile. |
 | 🚀 Dock shortcuts | Open each Dude using its custom name without a Terminal window. |
+| ✨ Per-profile Retina | Enable or disable Retina rendering independently for each environment. |
 | 💾 Backup and restore | Protect connections, preferences and the complete virtual C: drive. |
 | 🛠️ Built-in maintenance | Repair shortcuts, update Wine, inspect logs and stop stuck processes. |
 | 🍎 Apple Silicon ready | Designed for M1, M2, M3, M4 and newer Macs. |
@@ -142,6 +143,7 @@ To pass only the device address, use:
 - **Open**: starts The Dude without opening Terminal.
 - **Open C: drive**: displays the profile's virtual disk in Finder.
 - **Install WinBox**: copies the bundled WinBox to `C:\winbox.exe`.
+- **Enable Retina / Disable Retina**: toggles high-resolution rendering only for that profile. Close The Dude first and reopen it after the change.
 - **Repair shortcut**: rebuilds the Dock application without deleting profile data.
 - **Rename**: changes the name displayed in the dashboard and Dock.
 - **Backup**: creates a ZIP containing the complete profile environment.
