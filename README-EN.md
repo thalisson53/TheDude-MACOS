@@ -65,6 +65,8 @@ Wine is not bundled in the ZIP because all profiles share the system installatio
 
 Once this preparation is complete, you can add new profiles without repeating these steps.
 
+> **Important on a new Mac:** during the first installation, Wine may need to install `gstreamer-runtime`. This component requests an administrator password and, on some versions, cannot do so directly from the TheDude MACOS window. If you see `sudo: a terminal is required to read the password`, follow the troubleshooting instructions below.
+
 ## 🔐 If macOS blocks Wine
 
 If macOS says Apple cannot verify Wine:
@@ -200,6 +202,33 @@ You can then install new profiles or restore your existing backups.
 ### Wine was blocked
 
 Open **System Settings > Privacy & Security > Open Anyway**, then return to the manager and click **Check**.
+
+### GStreamer error while installing Wine on a new Mac
+
+If the installation displays messages such as:
+
+```text
+sudo: a terminal is required to read the password
+sudo: a password is required
+Error: Failure while executing gstreamer-runtime
+```
+
+Wine attempted to install **GStreamer Runtime**, but the installer requires an administrator password and did not have an interactive Terminal window where it could request it. This does not mean your password or The Dude is broken; the Homebrew step simply needs to run in Terminal.
+
+To complete the installation:
+
+1. Open the macOS **Terminal** application.
+2. Run:
+
+   ```bash
+   /opt/homebrew/bin/brew install --cask wine-stable
+   ```
+
+3. Enter the administrator password when requested and press Return. The password is not displayed while you type.
+4. Wait for Homebrew to finish installing GStreamer and Wine.
+5. Return to **TheDude MACOS** and click **Check**.
+
+The warning stating that `gstreamer-runtime` did not pass the Gatekeeper check is not, by itself, what stopped this installation. The relevant failure is `a terminal is required to read the password`.
 
 ### The Dude does not open
 

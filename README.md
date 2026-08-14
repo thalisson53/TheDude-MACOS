@@ -75,6 +75,8 @@ O Wine não fica dentro do ZIP porque é compartilhado por todos os perfis e ocu
 
 Depois dessa preparação, novos perfis podem ser instalados sem repetir essas etapas.
 
+> **Atenção em um Mac novo:** durante a primeira instalação, o Wine pode precisar instalar o `gstreamer-runtime`. Esse componente solicita a senha de administrador e, em algumas versões, não consegue fazer isso diretamente pela janela do TheDude MACOS. Se aparecer a mensagem `sudo: a terminal is required to read the password`, siga as instruções da seção de solução de problemas abaixo.
+
 ## 🔐 Se o macOS bloquear o Wine
 
 Se aparecer a mensagem informando que a Apple não conseguiu verificar o Wine:
@@ -223,6 +225,33 @@ Homebrew e Wine precisam ser preparados separadamente em cada Mac. Os instalador
 ### O Wine foi bloqueado
 
 Use **Ajustes do Sistema > Privacidade e Segurança > Abrir Mesmo Assim** e depois clique em **Verificar**.
+
+### Erro do GStreamer ao instalar o Wine em um Mac novo
+
+Se a instalação mostrar mensagens como:
+
+```text
+sudo: a terminal is required to read the password
+sudo: a password is required
+Error: Failure while executing gstreamer-runtime
+```
+
+isso significa que o Wine tentou instalar o **GStreamer Runtime**, mas o instalador precisa da senha de administrador e não encontrou uma janela de Terminal para solicitá-la. O problema não é a senha nem o The Dude; é apenas a ausência de um Terminal interativo durante essa etapa do Homebrew.
+
+Para concluir:
+
+1. Abra o aplicativo **Terminal** do macOS.
+2. Execute:
+
+   ```bash
+   /opt/homebrew/bin/brew install --cask wine-stable
+   ```
+
+3. Quando solicitado, digite a senha do usuário administrador e pressione Enter. A senha não aparece na tela enquanto é digitada.
+4. Aguarde o Homebrew finalizar a instalação do GStreamer e do Wine.
+5. Volte ao **TheDude MACOS** e clique em **Verificar**.
+
+O aviso informando que o `gstreamer-runtime` não passou na verificação do Gatekeeper não é, por si só, a causa dessa falha. A mensagem determinante é `a terminal is required to read the password`.
 
 ### O The Dude não abre
 
