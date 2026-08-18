@@ -1,5 +1,51 @@
 # 🖥️ TheDude MACOS
 
+## 📥 Download do TheDude MACOS
+
+O download do **TheDude MACOS** agora é disponibilizado através do Gumroad.
+
+### 💙 Contribuição para manutenção do projeto
+
+Para ajudar a manter o projeto ativo, corrigir problemas, testar novas versões do macOS e continuar desenvolvendo melhorias, foi definida uma **contribuição mínima de US$ 2** para realizar o download.
+
+> **Importante:** esse valor é destinado ao desenvolvimento e à manutenção do projeto **TheDude MACOS**. O projeto é independente e não representa uma venda ou licença oficial do MikroTik The Dude ou WinBox.
+
+### 👉 [Baixar TheDude MACOS por US$ 2](https://thalisson5.gumroad.com/l/thedude-macos-apple-silicon)
+
+O pagamento é realizado pelo Gumroad e, após a conclusão, o download do pacote é liberado automaticamente.
+
+---
+
+### O que sua contribuição ajuda a manter
+
+* Compatibilidade com novas versões do macOS
+* Testes em Apple Silicon
+* Atualizações do Wine
+* Correções de bugs
+* Melhorias na interface
+* Backup e restauração
+* Integração com WinBox
+* Documentação e suporte ao projeto
+
+Obrigado por apoiar o desenvolvimento do **TheDude MACOS**. 💙
+
+
+## 📦 Conteúdo disponibilizado no download
+
+Após adquirir o acesso pelo Gumroad, o pacote inclui:
+
+* `TheDude MACOS.app`: painel principal.
+* Instalador do The Dude 7.23.3 integrado ao aplicativo.
+* `winbox.exe` integrado ao aplicativo.
+* Criador de atalhos para o Dock.
+* Ferramentas de backup, restauração, reparo e desinstalação.
+* Manual de instalação e utilização.
+
+👉 **[Obter o TheDude MACOS](https://thalisson5.gumroad.com/l/thedude-macos-apple-silicon)**
+
+A contribuição mínima de **US$ 2** ajuda a manter o projeto, realizar testes e desenvolver novas melhorias.
+
+
 > O jeito prático de instalar e gerenciar o MikroTik The Dude no macOS com Apple Silicon.
 
 **Apple Silicon** • **The Dude 7.23.3** • **WinBox incluído** • **Perfis isolados** • **Backup e restauração**
